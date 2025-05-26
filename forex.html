@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Trading Hub</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            position: relative;
+            z-index: 2;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            z-index: 2;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .forex-chart {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--secondary-color);
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        
+        .book-recommendations {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .book {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        
+        .book h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        
+        .book p {
+            color: #666;
+        }
+        
+        .videos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        
+        .welcome-message {
+            background: var(--secondary-color);
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 40px 0;
+            text-align: center;
+        }
+        
+        .welcome-message h2 {
+            margin-top: 0;
+        }
+        
+        footer {
+            background: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+        
+        .trading-tips {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .tip {
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid var(--accent-color);
+            background-color: #f9f9f9;
+        }
+        
+        @media (max-width: 768px) {
+            .book-recommendations, .videos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to the Forex Trading Hub</h1>
+            <p>Master the markets with expert insights and valuable knowledge</p>
+        </div>
+    </header>
+    
+    <div class="container">
+        <section class="welcome-message">
+            <h2>Begin Your Forex Trading Journey</h2>
+            <p>Forex trading offers exciting opportunities for those willing to learn. This hub is designed to help you navigate the complex world of currency trading with expert recommendations and valuable resources to build your skills.</p>
+        </section>
+        
+        <h2 class="section-title">Understanding Forex Trading</h2>
+        <div class="forex-chart">
+            <p>Forex (foreign exchange) trading involves buying and selling currency pairs with the goal of making a profit. The forex market is the largest and most liquid financial market in the world, with a daily trading volume exceeding $6 trillion.</p>
+            <p>Successful traders focus on understanding the fundamental forces that move currency prices. Market movements follow patterns and trends that can be analyzed and predicted with the right tools and knowledge.</p>
+        </div>
+        
+        <h2 class="section-title">Essential Trading Tips</h2>
+        <div class="trading-tips">
+            <div class="tip">
+                <h3>1. Understand Market Fundamentals</h3>
+                <p>Economic fundamentals govern currency movements. Study interest rates, GDP, employment data, and political stability to make informed trading decisions.</p>
+            </div>
+            
+            <div class="tip">
+                <h3>2. Develop a Trading Plan</h3>
+                <p>Plan your entries, exits, and risk management strategies in advance. A well-structured plan is your roadmap to consistent trading.</p>
+            </div>
+            
+            <div class="tip">
+                <h3>3. Manage Your Risk</h3>
+                <p>Never risk more than 1-2% of your account on a single trade. Protecting your capital is essential for long-term success.</p>
+            </div>
+            
+            <div class="tip">
+                <h3>4. Keep a Trading Journal</h3>
+                <p>Document your trades, thoughts, and emotions. Analyzing your performance helps identify strengths and areas for improvement.</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Recommended Forex Books</h2>
+        <div class="book-recommendations">
+            <div class="book">
+                <h3>Currency Trading for Dummies</h3>
+                <p>By Kathleen Brooks and Brian Dolan</p>
+                <p>A great starting point for beginners. Covers all the basics in an easy-to-understand format.</p>
+            </div>
+            
+            <div class="book">
+                <h3>Day Trading and Swing Trading the Currency Market</h3>
+                <p>By Kathy Lien</p>
+                <p>Excellent for understanding technical and fundamental strategies in forex trading.</p>
+            </div>
+            
+            <div class="book">
+                <h3>The Little Book of Currency Trading</h3>
+                <p>By Kathy Lien</p>
+                <p>A concise guide to forex trading strategies that can help you develop a solid foundation.</p>
+            </div>
+            
+            <div class="book">
+                <h3>Forex Price Action Scalping</h3>
+                <p>By Bob Volman</p>
+                <p>Understand price movements at the most granular level - perfect for the analytically minded trader.</p>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Expert Forex Insights</h2>
+        <p>Here are some valuable videos from trading experts that you might find particularly helpful:</p>
+        <div class="videos">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/watch?v=gAYLXYmUUCg" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/watch?v=c5H_QYv9LO4" allowfullscreen></iframe>
+            </div>
+            
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/watch?v=GKckbawOVeU" allowfullscreen></iframe>
+            </div>
+        </div>
+        
+        <h2 class="section-title">Forex Action Plan</h2>
+        <div class="forex-chart">
+            <ol>
+                <li><strong>Educate Yourself:</strong> Spend at least 2 hours per day studying forex concepts</li>
+                <li><strong>Paper Trade:</strong> Practice with a demo account for 3-6 months</li>
+                <li><strong>Start Small:</strong> Begin live trading with a small account</li>
+                <li><strong>Review Weekly:</strong> Analyze your trades every weekend</li>
+                <li><strong>Continuous Learning:</strong> Always look for new strategies and insights</li>
+            </ol>
+            <p>Remember, success in forex trading comes from disciplined application of knowledge and consistent practice!</p>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Forex Trading Hub | Your Resource for Market Mastery</p>
+        </div>
+    </footer>
+</body>
+</html>
